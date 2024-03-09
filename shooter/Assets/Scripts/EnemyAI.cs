@@ -76,7 +76,7 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackUpdate()
     {
-        if (!_isPlayerNoticed)
+        if (_isPlayerNoticed)
         {
             if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
             {
