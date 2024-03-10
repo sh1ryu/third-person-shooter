@@ -27,6 +27,13 @@ public class PlayerHealth : MonoBehaviour
         DrawHealthBar();
     }
 
+    public void AddHealth(float amount)
+    {
+        Value += amount;
+        Value = Mathf.Clamp(Value, 0, _maxValue);
+        DrawHealthBar();
+    }
+
     private void DrawHealthBar()
     {
         valueRectTransform.anchorMax = new Vector2(Value / _maxValue, 1);
