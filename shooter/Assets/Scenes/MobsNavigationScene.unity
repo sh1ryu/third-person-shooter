@@ -448,6 +448,161 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[0].grenadeDamage
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[1].grenadeDamage
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[2].grenadeDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[3].grenadeDamage
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[4].grenadeDamage
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[5].grenadeDamage
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[6].grenadeDamage
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[7].grenadeDamage
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[8].grenadeDamage
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[9].grenadeDamage
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[0].fireballDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[1].fireballDamage
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[2].fireballDamage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[3].fireballDamage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[4].fireballDamage
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[5].fireballDamage
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[6].fireballDamage
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[7].fireballDamage
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[8].fireballDamage
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[9].fireballDamage
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[0].experienceForTheNextLevel
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[1].experienceForTheNextLevel
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[2].experienceForTheNextLevel
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[3].experienceForTheNextLevel
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[4].experienceForTheNextLevel
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[5].experienceForTheNextLevel
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[6].experienceForTheNextLevel
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[7].experienceForTheNextLevel
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[8].experienceForTheNextLevel
+      value: 4500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189639652294872173, guid: 38f377e1b2d949740a8f3576f55ae133,
+        type: 3}
+      propertyPath: levels.Array.data[9].experienceForTheNextLevel
+      value: 7000
+      objectReference: {fileID: 0}
     - target: {fileID: 2276459970516975344, guid: 38f377e1b2d949740a8f3576f55ae133,
         type: 3}
       propertyPath: valueRectTransform
@@ -682,7 +837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ee377ee62e2b8469365fa077c1b317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Value: 100
+  Value: 1000
+  playerProgress: {fileID: 0}
+  explosionPrefab: {fileID: 0}
 --- !u!1 &727821209
 GameObject:
   m_ObjectHideFlags: 0

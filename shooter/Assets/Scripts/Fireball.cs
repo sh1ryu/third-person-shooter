@@ -6,7 +6,7 @@ public class Fireball : MonoBehaviour
 {
     public float Speed;
     public float Lifetime;
-    public float Damage = 10;
+    public float damage = 10;
 
     private void Start()
     {
@@ -40,7 +40,7 @@ public class Fireball : MonoBehaviour
 
         if (enemyHealth != null)
         {
-            enemyHealth.DealDamage(Damage);
+            enemyHealth.DealDamage(damage);
         }
     }
 }
