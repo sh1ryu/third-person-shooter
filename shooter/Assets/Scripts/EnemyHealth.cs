@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public Animator animator;
     public float Value = 100;
 
     public PlayerProgress playerProgress;
@@ -10,6 +12,11 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         playerProgress = FindObjectOfType<PlayerProgress>();
+    }
+
+    public bool IsAlive()
+    {
+        return Value > 0;
     }
 
     public void DealDamage(float damage)
@@ -22,7 +29,18 @@ public class EnemyHealth : MonoBehaviour
         Value -= damage;
         if (Value <= 0)
         {
-            Destroy(gameObject);
+            EnemyDeath();
         }
+        else
+        {
+            animator.SetTrigger("hit");
+        }
+    }
+    private void EnemyDeath()
+    {
+        animator.SetTrigger("death");
+        GetComponent<EnemyAI>().enabled = false;
+        GetComponent<NavMeshAgent>().enabled = false;
+        GetComponent<CapsuleCollider>().enabled = false;
     }
 }

@@ -197,7 +197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.7}
   m_AnchorMax: {x: 0.5, y: 0.7}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2518426102211017559
@@ -830,6 +830,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &4760251702227522333
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826479496885604223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 73f02b1312b2b7449b1526e2fb474ea8, type: 3}
+  m_Controller: {fileID: 9100000, guid: fb9743fe4d1114644a50fa251344622a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6636821417730004047
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a72a8cd0b3c2df4c8185fd2f18ed45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4760251702227522333}
   gravity: 9.8
   jumpForce: 10
   speed: 3
@@ -933,6 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a3fbcdc540952468321b30f8521660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
   FireballPrefab: {fileID: 3356240105956107232, guid: 282b8acf2a87a714285c6b478e9adccd,
     type: 3}
   FireballSourceTransform: {fileID: 4765199529090005851}
@@ -952,6 +973,7 @@ MonoBehaviour:
   valueRectTransform: {fileID: 0}
   gameplayUI: {fileID: 2334518635335094871}
   gamepOverScreen: {fileID: 1255671824652550187}
+  animator: {fileID: 4760251702227522333}
 --- !u!114 &7087366937361945944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,6 +986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3516a98475ab9e848b95660bc85c94ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 50
   grenadePrefab: {fileID: -3650445037829964179, guid: 5e287f359423fc5478a3ed90107f5603,
     type: 3}
   grenadeSourceTransform: {fileID: 7144839324396540030}
@@ -980,6 +1003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684c2ed457a1eb24683e8343ca98aeee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grenadeCaster: {fileID: 0}
+  levels: []
   experienceValueRectTransform: {fileID: 7967109184746420224}
   levelValueTMP: {fileID: 317263139537022021}
 --- !u!1 &6636821419389737601
@@ -1618,6 +1643,12 @@ PrefabInstance:
 --- !u!4 &6597774106467685829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 73f02b1312b2b7449b1526e2fb474ea8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6636821418157519406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5826479496885604223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 73f02b1312b2b7449b1526e2fb474ea8,
     type: 3}
   m_PrefabInstance: {fileID: 6636821418157519406}
   m_PrefabAsset: {fileID: 0}

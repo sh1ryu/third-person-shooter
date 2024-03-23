@@ -11,6 +11,14 @@ public class EnemyAI : MonoBehaviour
     private bool _isPlayerNoticed;
     public float Damage = 30;
     private PlayerHealth _playerHealth;
+    public Animator animator;
+    public EnemyHealth _enemyHealth;
+    public float attackDistance = 0.2f;
+
+    public bool IsAlive()
+    {
+        return _enemyHealth.IsAlive();
+    }
 
     private void Start()
     {
@@ -22,6 +30,8 @@ public class EnemyAI : MonoBehaviour
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _playerHealth = player.GetComponent<PlayerHealth>();
+        _enemyHealth = GetComponent<EnemyHealth>();
+
     }
 
     private void Update()
@@ -34,8 +44,10 @@ public class EnemyAI : MonoBehaviour
 
     private void NoticePlayerUpdate()
     {
-        var direction = player.transform.position - transform.position;
         _isPlayerNoticed = false;
+        if (!_playerHealth.IsAlive()) return;
+
+        var direction = player.transform.position - transform.position;
 
         if (Vector3.Angle(transform.forward, direction) < ViewAngle)
         {
@@ -80,8 +92,18 @@ public class EnemyAI : MonoBehaviour
         {
             if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
             {
-                _playerHealth.DealDamage(Damage * Time.deltaTime);
+                animator.SetTrigger("attack");
             }
         }
+    }
+    public void AttackDamage()
+    {
+        if (!_isPlayerNoticed) 
+            return;
+
+        if (_navMeshAgent.remainingDistance > _navMeshAgent.stoppingDistance + attackDistance) 
+            return;
+
+        _playerHealth.DealDamage(Damage);
     }
 }

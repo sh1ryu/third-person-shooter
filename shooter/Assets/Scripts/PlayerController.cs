@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator animator;
+
     public float gravity = 9.8f;
     public float jumpForce;
     public float speed;
@@ -21,31 +23,38 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         _moveVector = Vector3.zero;
+        var runDirection = 0;
 
         if (Input.GetKey(KeyCode.W))
         {
             _moveVector += transform.forward;
+            runDirection = 1;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             _moveVector -= transform.forward;
+            runDirection = 2;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             _moveVector += transform.right;
+            runDirection = 3;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             _moveVector -= transform.right;
+            runDirection = 4;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && _characterController.isGrounded)
         {
             _fallVelocity = -jumpForce;
+            runDirection = 5;
         }
+        animator.SetInteger("run direction", runDirection);
     }
 
     void FixedUpdate()

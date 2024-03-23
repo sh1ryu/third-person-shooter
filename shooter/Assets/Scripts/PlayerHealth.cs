@@ -10,11 +10,17 @@ public class PlayerHealth : MonoBehaviour
     private float _maxValue;
     public GameObject gameplayUI;
     public GameObject gamepOverScreen;
+    public Animator animator;
 
     private void Start()
     {
         _maxValue = Value;
         DrawHealthBar();
+    }
+
+    public bool IsAlive()
+    {
+        return Value > 0;
     }
 
     public void DealDamage(float damage)
@@ -46,5 +52,6 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<PlayerController>().enabled = false;
         GetComponent<FireballCaster>().enabled = false;
         GetComponent<CameraRotation>().enabled = false;
+        animator.SetTrigger("death");
     }
 }

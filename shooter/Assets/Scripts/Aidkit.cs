@@ -9,7 +9,6 @@ public class Aidkit : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         var playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-
         if (playerHealth != null)
         {
             playerHealth.AddHealth(healAmount);
